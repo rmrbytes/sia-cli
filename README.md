@@ -2,7 +2,7 @@
 
 **Version:** v0.1.0
 
-Welcome to the **SIA CLI** repository! This command-line interface is part of the SIA (Servers for Intelligent Agents) suite, allowing you to easily manage intelligent agents and interact with your SIA server using straightforward commands.
+Welcome to the **SIA CLI** repository! This command-line interface is part of the SIA server suite, allowing you to easily manage intelligent agents and interact with your SIA server using straightforward commands.
 
 ## 🚀 **Features**
 
