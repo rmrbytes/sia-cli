@@ -40,7 +40,7 @@ For more detailed documentation and usage examples, please refer to the **[SIA U
 
 ## 📦 **License**
 
-This project is licensed under the **MIT License**. See the **[LICENSE](https://github.com/username/sia-cli/blob/main/LICENSE)** file for more details.
+This project is licensed under the **MIT License**. See the **[LICENSE](https://github.com/rmrbytes/sia-cli/blob/main/LICENSE)** file for more details.
 
 ---
 
