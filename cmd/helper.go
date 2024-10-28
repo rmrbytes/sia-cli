@@ -19,6 +19,7 @@ const (
 
 // handleErr to handle errors for non-command functions
 func handleErr(err error, msg string) {
+	fmt.Println(err)
 	if msg != "" {
 		fmt.Printf("Error: %s\n", msg)
 	} else if err != nil {

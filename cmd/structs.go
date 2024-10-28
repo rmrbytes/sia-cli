@@ -67,3 +67,19 @@ type AgentResponse struct {
 	CreatedOn        int64        `json:"created_on"`
 	UpdatedOn        int64        `json:"updated_on"`
 }
+
+type ChatMessage struct {
+	Role    string `json:"role"`
+	Content string `json:"content"`
+}
+
+// ChatRequest represents the entire request payload.
+type ChatRequest struct {
+	Prompt   string        `json:"prompt"`
+	Messages []ChatMessage `json:"messages"`
+}
+
+type ChatResponse struct {
+	Content string `json:"content"`
+	Role    string `json:"role"`
+}

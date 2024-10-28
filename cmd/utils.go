@@ -276,6 +276,16 @@ func unmarshalAgentInputYaml(responseBody []byte) AgentInputYaml {
 	}
 }
 
+func unmarshalChatResponse(responseBody []byte) ChatResponse {
+	var chatResponse ChatResponse
+	err := json.Unmarshal(responseBody, &chatResponse)
+	if err != nil {
+		handleErr(err, "Failed to unmarshal chat body")
+	}
+
+	return chatResponse
+}
+
 func addDeletedFiles(agentInput *AgentInputYaml, agentResponse AgentResponse) {
 	for _, file := range agentResponse.Files {
 		agentInput.DeletedFiles = append(agentInput.DeletedFiles, file.Filename)
