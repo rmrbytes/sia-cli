@@ -1,0 +1,22 @@
+
+name: agent-name # A meaningful name with letters, digits, hyphen, underscore, no blanks
+instructions: |
+  This is a sample instruction for the agent. It can be multiline.
+  
+  Edit it accordingly.
+welcome_message: Welcome to the Agent!
+suggested_prompts: # A max of 3 prompts can be given
+  - What can you do?
+  - How do I use this agent?
+  - Tell me something interesting.
+new_files:
+  - filepath: "~/docs/document1.pdf" # absolute path
+    meta:
+      split_by: "sentence"
+      split_length: 4
+      split_overlap: 1
+      split_threshold: 0
+  - filepath: "../files/file1.txt" # relative path to cwd
+    meta:
+      split_by: "word" 
+      split_length: 200 # defaults will be used for missing meta

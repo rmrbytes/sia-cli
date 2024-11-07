@@ -52,14 +52,15 @@ var changepwdCmd = &cobra.Command{
 
 		// Create the payload as JSON
 		payload := map[string]string{
-			"password": changePwInput.Password,
+			"current_password": changePwInput.CurrentPassword,
+			"new_password":     changePwInput.Password,
 		}
 
 		// Get the request body
 		reqBody := generateJSONBody(payload)
 
 		// Create the POST request
-		req := createHttpClient("POST", setpwURL, reqBody, "application/json")
+		req := createAuthHttpClient("POST", setpwURL, reqBody, "application/json")
 
 		// Execute HTTP client
 		res, resBody := executeHttpRequest(req)
